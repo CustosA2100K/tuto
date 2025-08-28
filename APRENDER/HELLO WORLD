@@ -1,0 +1,29 @@
+print("=== CALCULADORA BÁSICA ===")
+num1 = float(input("1"))
+num2 = float(input("5"))
+print("1:")
+print("1. Sumar")
+print("2. Restar")
+print("3. Multiplicar")
+print("4. Dividir")
+
+opcion = input("Opción (1/2/3/4): ")
+
+
+if opcion == "1":
+    resultado = num1 + num2
+    print("El resultado es:", resultado)
+elif opcion == "2":
+    resultado = num1 - num2
+    print("El resultado es:", resultado)
+elif opcion == "3":
+    resultado = num1 * num2
+    print("El resultado es:", resultado)
+elif opcion == "4":
+    if num2 != 0:
+        resultado = num1 / num2
+        print("El resultado es:", resultado)
+    else:
+        print("No se puede dividir entre cero 😅")
+else:
+    print("Opción no válida")
